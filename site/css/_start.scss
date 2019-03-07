@@ -10,6 +10,7 @@
 .content{
     min-height: 70vh;
     padding: 10px;
+    padding-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -38,12 +39,22 @@
 
         h1{
             font-size: 1.5rem;
+            margin-bottom: 2px;
+        }
+        h2{
+            font-size: 0.6rem;
         }
     }
     .sale-box-small{
         width: calc(50% - 5px);
+        text-align: center;
+
         h1{
             font-size: 1.3rem;
+        }
+        h2{
+            font-size: 0.5rem;
+            max-width: 60%;
         }
     }
 }
