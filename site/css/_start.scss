@@ -1,0 +1,14 @@
+.hero{
+    img{
+        display: block;
+        &:last-child{
+            transform: scaleY(1.02)
+        }
+    }
+}
+
+.content{
+    min-height: 70vh;
+
+    background: linear-gradient(#67BBE5 2%, #365E72 100%);
+}
