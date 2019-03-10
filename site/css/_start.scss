@@ -15,10 +15,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    background: linear-gradient(rgb(149, 208, 238) 2%, #365E72 100%);
+    background: linear-gradient($light-blue 2%, $dark-blue 100%);
 
-    h2{
+    & > h2{
         margin-bottom: 10px;
+        letter-spacing: 7px;
     }
 
     .sale-box{
@@ -31,7 +32,7 @@
         flex-direction: column;
 
         margin-bottom: 10px;
-        background-color: red;
+        background: linear-gradient(135deg, rgba(white, 0.3) 0%, rgba(white, 0.6) 100%);
 
         &:last-child{
             margin-bottom: 0;
@@ -55,6 +56,51 @@
         h2{
             font-size: 0.5rem;
             max-width: 60%;
+        }
+    }
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 10px 0;
+
+    label h2{
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    .sign-up-holder{
+        display: flex;
+        flex-direction: column;
+
+        input{
+            border: none;
+            border-bottom: 2px $light-text solid;
+            padding: 10px 0;
+            transition: border-bottom 200ms;
+            margin-bottom: 10px;
+            background: none;
+
+            &:focus{
+                outline: none;
+                border-bottom: 2px $dark-blue solid;
+            }
+            &::placeholder{
+                color: $light-text;
+            }
+        }
+
+        button{
+            padding: 0.6rem 1rem;
+            background: $light-text;
+            outline: none;
+
+            &:hover{
+                background-color: $dark-blue;
+                color: white;
+            }
         }
     }
 }

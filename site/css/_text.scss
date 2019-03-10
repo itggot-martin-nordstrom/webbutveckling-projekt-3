@@ -11,6 +11,7 @@ p,a{
 
 li a{
     text-transform: capitalize;
+    text-decoration: underline;
 }
 
 h1{
@@ -24,3 +25,9 @@ h2{
     letter-spacing: 3px;
 }
 
+button{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
