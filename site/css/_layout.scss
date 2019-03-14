@@ -5,8 +5,8 @@ body{
 .wrapper{
     min-height: 100vh;
     width: calc(100%-40px);
-    padding: 20px;
-    padding-bottom: 40px;
+    padding: $distance-mobile-m;
+    padding-bottom: $distance-mobile-l;
 
     display: grid;
     grid-template-areas:
@@ -137,7 +137,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
+    padding-bottom: $distance-mobile-s;
 
     background-color: white;
     color: black;
@@ -156,7 +156,7 @@ main{
 footer{
     grid-area: footer;
 
-    padding-top: 30px;
+    margin-top: $distance-mobile-l;
 
     background-color: white;
     color: black;
@@ -169,7 +169,7 @@ footer{
         column-count: 2;
         padding: 0;
         margin: 0;
-        margin-top: 10px;
+        margin-top: $distance-mobile-s;
         list-style: none;
 
         li a{

@@ -6,32 +6,36 @@
         }
     }
 }
-
+.start-content{
+    background: linear-gradient($light-blue, $dark-blue);
+}
 .content{
     min-height: 70vh;
-    padding: 10px;
-    padding-bottom: 40px;
+    padding: $distance-mobile-s;
+    padding-bottom: $distance-mobile-l;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    background: linear-gradient($light-blue 2%, $dark-blue 100%);
 
     & > h2{
-        margin-bottom: 10px;
+        margin-bottom: $distance-mobile-s;
         letter-spacing: 7px;
+        width: 100%;
     }
 
     .sale-box{
-        width: 100%;
         height: 120px;
-
+    }
+    
+    .box{
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
 
-        margin-bottom: 10px;
+        margin-bottom: $distance-mobile-s;
         background: linear-gradient(135deg, rgba(white, 0.3) 0%, rgba(white, 0.6) 100%);
 
         &:last-child{
@@ -46,7 +50,7 @@
             font-size: 0.6rem;
         }
     }
-    .sale-box-small{
+    .box-small{
         width: calc(50% - 5px);
         text-align: center;
 
@@ -64,7 +68,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px 0 10px 0;
+    margin: $distance-mobile-l 0 $distance-mobile-s 0;
 
     label h2{
         font-size: 0.8rem;
@@ -78,9 +82,9 @@
         input{
             border: none;
             border-bottom: 2px $light-text solid;
-            padding: 10px 0;
+            padding: $distance-mobile-s 0;
             transition: border-bottom 200ms;
-            margin-bottom: 10px;
+            margin-bottom: $distance-mobile-s;
             background: none;
 
             &:focus{
