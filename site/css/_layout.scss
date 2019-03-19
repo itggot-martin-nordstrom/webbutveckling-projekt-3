@@ -328,10 +328,6 @@ main{
     flex-wrap: wrap;
     // flex-direction: column;
     width: 100%;
-    max-height: 0;
-
-    overflow: hidden;
-    transition: 2s ease-in-out;
     
     p{
         height: 30px;
@@ -352,10 +348,8 @@ main{
         border: 3px white solid;
         
         
+        
     }
-}
-.option-active{
-    max-height: 220px;
 }
 #price{
     font-size: 3rem;

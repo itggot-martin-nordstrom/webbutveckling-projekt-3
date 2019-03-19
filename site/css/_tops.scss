@@ -38,18 +38,36 @@
 }
 
 .options-colour{
-    justify-content: space-evenly;
+    display: block;
+
+    max-height: 0;
+
+    overflow: hidden;
+    transition: 1000ms ease-in-out;
 
     div{
-        width: 100%;
+        width: 60%;
+        max-width: 300px;
         height: 30px;
         margin-bottom: $distance-mobile-s;
+
+        box-sizing: border-box;
+        border: 3px white solid;
+        border-radius: 10px;
 
 
         &:first-of-type{
             margin-top: $distance-mobile-s;
         }
 
+        
     }
+    
+}
+.option-active{
+    max-height: 220px;
+}
 
+.category-tops .options *:hover{
+    border: 3px $yellow solid;
 }
