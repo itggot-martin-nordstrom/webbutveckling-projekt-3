@@ -1,3 +1,18 @@
+.colour-red {
+  background-color: red; }
+
+.colour-orange {
+  background-color: orange; }
+
+.colour-yellow {
+  background-color: yellow; }
+
+.colour-green {
+  background-color: green; }
+
+.colour-blue {
+  background-color: blue; }
+
 h1, h2, h3, h4, h5 {
   margin: 0;
   font-family: 'Cabin', sans-serif; }
@@ -246,28 +261,40 @@ main {
   .item-content .category {
     margin-bottom: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     width: 100%; }
-    .item-content .category .options {
-      display: flex; }
-      .item-content .category .options p {
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-        background-color: white;
-        margin-left: 10px;
-        cursor: pointer; }
-        .item-content .category .options p:hover {
-          background-color: black;
-          color: white; }
     .item-content .category h2 {
       font-size: 0.8rem; }
     .item-content .category:last-of-type {
       margin-bottom: 20px; }
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: 2s ease-in-out; }
+  .options p {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 3px white solid; }
+
+.option-active {
+  max-height: 220px; }
+
+#price {
+  font-size: 3rem; }
 
 .newsletter {
   display: flex;
@@ -349,6 +376,21 @@ footer {
   overflow: hidden; }
   .item-box h2 {
     margin-bottom: 10px; }
+
+.options-size {
+  justify-content: flex-end;
+  width: 70%; }
+  .options-size p {
+    margin-left: 10px; }
+
+.options-colour {
+  justify-content: space-evenly; }
+  .options-colour div {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px; }
+    .options-colour div:first-of-type {
+      margin-top: 10px; }
 
 .bottoms-content {
   background: linear-gradient(#95d0ee, #365E72); }

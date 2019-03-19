@@ -5,19 +5,28 @@
         <div class="box"></div>
     </div>
 
-    <div class="category">
+    <div class="category category-tops">
         <h2>Size</h2>
-        <div class="options">
-            <div class="size"><p>S</p></div>
-            <div class="size"><p>M</p></div>
-            <div class="size"><p>L</p></div>
+        <div class="options options-size">
+            <p class="size">S</p>
+            <p class="size">M</p>
+            <p class="size">L</p>
         </div>
     </div>
-    <div class="category">
+    <div class="category category-tops">
         <h2>Colour</h2>
+        <i class="material-icons" onclick="toggleOption(2)" id="colour-toggle">keyboard_arrow_down</i>
+        <div class="options options-colour">
+            <div class="colour colour-red"></div>
+            <div class="colour colour-orange"></div>
+            <div class="colour colour-yellow"></div>
+            <div class="colour colour-green"></div>
+            <div class="colour colour-blue"></div>
+        </div>
     </div>
-    <div class="category">
+    <div class="category category-tops">
         <h2>Price</h2>
+        <h2 id="price">349 kr</h2>
     </div>
     <button onclick="notificationSquad(top)">Add to cart</button>
 </div>

@@ -40,3 +40,18 @@ function notificationSquad(input){
         notification.remove()
     }, 3000)
 }
+
+function toggleOption(input){
+    if(input == 2){
+        option = document.body.querySelector(".options-colour")
+        option.classList.toggle("option-active")
+
+        icon = document.body.querySelector("#colour-toggle")
+
+        if(icon.innerHTML == "keyboard_arrow_down"){
+            icon.innerHTML = "keyboard_arrow_up"
+        }else{
+            icon.innerHTML = "keyboard_arrow_down"
+        }
+    }
+}
