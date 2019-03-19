@@ -1,18 +1,27 @@
+.top-notification{
+
+    i{
+        background: $pink;
+    }
+}
+
 .tops-content{
     background: linear-gradient($yellow, $pink);
+
+    button{
+        background: $yellow;
+    }
 }
 
 .item-box{
-    height: 120px;
-    // justify-content: flex-end;
+    height: 50vw;
+    display: flex;
+    justify-content: flex-end;
     overflow: hidden;
 
-    // h1{
-    //     position: relative;
-    //     top: 20%;
-    // }
 
-    // &:hover h1{
-    //     top: 0;
-    // }
+
+    h2{
+        margin-bottom: 10px;
+    }
 }
