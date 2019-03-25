@@ -16,58 +16,26 @@
 .item-box{
     height: 50vw;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
     overflow: hidden;
-
-
 
     h2{
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
-}
 
-.options-size{
-    justify-content: flex-end;
-    width: 70%;
-
-    p{
-        margin-left: $distance-mobile-s;
-        // height: 40px;
-        // width: 40px;
-    }
-}
-
-.options-colour{
-    display: block;
-
-    max-height: 0;
-
-    overflow: hidden;
-    transition: 1000ms ease-in-out;
-
-    div{
-        width: 60%;
-        max-width: 300px;
-        height: 30px;
-        margin-bottom: $distance-mobile-s;
-
-        box-sizing: border-box;
-        border: 3px white solid;
-        border-radius: 10px;
-
-
-        &:first-of-type{
-            margin-top: $distance-mobile-s;
-        }
-
+    h2:last-of-type{
+        margin-bottom: 4px;
+        font-size: 0.8rem;
         
+        &::before, &::after{
+            display: none;
+        }
     }
-    
-}
-.option-active{
-    max-height: 220px;
 }
 
-.category-tops .options *:hover{
+
+// item-page
+.category-tops .options input:checked + label{
     border: 3px $yellow solid;
 }

@@ -1,3 +1,11 @@
+function mouseCoordinates(event){
+    yCoord = Math.trunc(event.clientY/10) + "° " + Math.floor(Math.random(100)*100) + "' " + Math.floor(Math.random()*1000000)/10000 + "'' S"
+    xCoord = Math.trunc(event.clientX/10) + "° " + Math.floor(Math.random(100)*100) + "' " + Math.floor(Math.random()*1000000)/10000 + "'' E"
+    
+    document.querySelector(".x-coords").innerHTML = xCoord
+    document.querySelector(".y-coords").innerHTML = yCoord
+}
+
 function toggleSidebar(){
     sidebar = document.querySelector(".sidebar")
     sidebar.classList.toggle("sidebar-active")

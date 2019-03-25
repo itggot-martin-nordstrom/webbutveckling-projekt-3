@@ -11,11 +11,15 @@
     <title>Home || Welcome</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" onmousemove="mouseCoordinates(event)">
+
+        <div class="coords">
+            <h2 class="y-coords">Y</h2>
+            <h2 class="x-coords">X</h2>
+        </div>
         
         <div class="notifications-holder">
             <div id="base-notification">
-
                 <i class="material-icons"></i>
             </div>
         </div>
@@ -44,18 +48,20 @@
         <main>
 
             <div class="content tops-content item-content">
+    <h2>Gucci coat number 3 of 10</h2>
     <div class="images">
         <div class="box box-small"></div>
         <div class="box box-small"></div>
         <div class="box"></div>
     </div>
+    
 
     <div class="category category-tops">
         <h2>Size</h2>
         <div class="options options-size">
-            <p class="size">S</p>
-            <p class="size">M</p>
-            <p class="size">L</p>
+            <input type="radio" name="size" id="small"><label for="small">S</label>
+            <input type="radio" name="size" id="medium"><label for="medium">M</label>
+            <input type="radio" name="size" id="large"><label for="large">L</label>
         </div>
     </div>
     <div class="category category-tops">
@@ -71,7 +77,7 @@
     </div>
     <div class="category category-tops">
         <h2>Price</h2>
-        <h2 id="price">349 kr</h2>
+        <h2 id="price">3299 kr</h2>
     </div>
     <button onclick="notificationSquad(top)">Add to cart</button>
 </div>
