@@ -66,7 +66,7 @@ body {
   .coords h2 {
     font-size: 1.5vw;
     margin: 0 10px;
-    width: 20vw; }
+    width: calc(100% - 40px); }
     .coords h2:last-child {
       text-align: right; }
 
@@ -317,7 +317,10 @@ footer {
     padding: 20px 20vw; }
 
   .coords {
-    display: flex; }
+    display: flex;
+    width: 80vh; }
+    .coords h2 {
+      font-size: 1.4vw; }
 
   header i {
     transform: scale(0); }
@@ -378,10 +381,21 @@ footer {
           background: #FFB526; }
         .sidebar .compass #W p {
           transform: none; } }
-.hero img {
-  display: block; }
-  .hero img:last-child {
-    transform: scaleY(1.02); }
+.hero {
+  overflow: hidden;
+  position: relative; }
+  .hero img {
+    display: block; }
+    .hero img:last-child {
+      transform: scaleY(1.02);
+      z-index: 10; }
+  .hero .bobber {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateY(-50%);
+    height: 60%;
+    animation: bobber 5s infinite ease-out, bobber_x 50s infinite ease-in-out; }
 
 .start-content {
   background: linear-gradient(#95d0ee, #365E72); }
@@ -389,6 +403,25 @@ footer {
 .sale-box {
   height: 120px; }
 
+@keyframes bobber {
+  0% {
+    transform: rotateZ(-3deg); }
+  25% {
+    top: 18%; }
+  50% {
+    transform: rotateZ(15deg); }
+  75% {
+    top: 15%; }
+  100% {
+    transform: rotateZ(-3deg);
+    top: 18%; } }
+@keyframes bobber_x {
+  0% {
+    left: 10%; }
+  50% {
+    left: 70%; }
+  100% {
+    left: 10%; } }
 .top-notification i {
   background: #FF7AA7; }
 

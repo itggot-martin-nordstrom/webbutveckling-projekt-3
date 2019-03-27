@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 365">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-water-2);
+      }
+
+      .cls-2 {
+        fill: #28b;
+      }
+
+      .cls-3 {
+        fill: #3fa4d6;
+      }
+
+      .cls-4 {
+        fill: #67bbe5;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-water-2">
+      <rect width="1920" height="365"/>
+    </clipPath>
+  </defs>
+  <g id="water-2" class="cls-1">
+    <rect class="cls-5" width="1920" height="365"/>
+    <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-2" width="1920" height="140.462" transform="translate(0 -0.445)"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" class="cls-3" width="1920" height="140.462" transform="translate(0 90.075)"/>
+    <rect id="Rectangle_6" data-name="Rectangle 6" class="cls-4" width="1920" height="140.462" transform="translate(0 230.538)"/>
+  </g>
+</svg>

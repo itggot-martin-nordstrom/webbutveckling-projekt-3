@@ -1,11 +1,25 @@
 .hero{
+    overflow: hidden;
+    position: relative;
     img{
         display: block;
+        
         &:last-child{
-            transform: scaleY(1.02)
+            transform: scaleY(1.02);
+            z-index: 10;
         }
     }
+    .bobber{
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translateY(-50%);
+        height: 60%;
+
+        animation: bobber 5s infinite ease-out, bobber_x 50s infinite ease-in-out;
+    }
 }
+
 .start-content{
     background: linear-gradient($light-blue, $dark-blue);
 }
@@ -14,3 +28,36 @@
     height: 120px;
 }
 
+@keyframes bobber{
+    0%{
+        transform: rotateZ(-3deg);  
+    }
+    25%{
+        top: 18%;  
+    }
+    50%{
+        transform: rotateZ(15deg);    
+        
+    }
+    75%{
+        top: 15%;  
+
+    }
+    100%{
+        transform: rotateZ(-3deg);    
+        top: 18%;  
+
+    }
+}
+
+@keyframes bobber_x{
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: 70%;
+    }
+    100%{
+        left: 10%;
+    }
+}

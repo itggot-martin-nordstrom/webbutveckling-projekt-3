@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 257 433">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-bobber2);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-6 {
+        filter: url(#Path_10);
+      }
+
+      .cls-7 {
+        filter: url(#Path_13);
+      }
+    </style>
+    <filter id="Path_13" x="-22.115" y="-66.708" width="292.27" height="468.664" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feFlood flood-color="#ffd926"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.923" y1="0.579" x2="-0.24" y2="0.607" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b3b3b3"/>
+      <stop offset="0.365" stop-color="#fff"/>
+      <stop offset="0.488" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff6cc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.071" y1="0.586" x2="0.926" y2="0.44" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff6cc"/>
+      <stop offset="0.248" stop-color="#fff"/>
+      <stop offset="1" stop-color="#b3b3b3"/>
+    </linearGradient>
+    <filter id="Path_10" x="-14.98" y="237.615" width="300.546" height="223.646" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25" result="blur-2"/>
+      <feFlood flood-color="#ffd926"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-3" x1="1.116" y1="0.396" x2="0.197" y2="0.457" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff6cc"/>
+      <stop offset="0.416" stop-color="#eee"/>
+      <stop offset="1" stop-color="#a3a3a3"/>
+    </linearGradient>
+    <clipPath id="clip-bobber2">
+      <rect width="257" height="433"/>
+    </clipPath>
+  </defs>
+  <g id="bobber2" class="cls-1">
+    <g id="Group_7" data-name="Group 7" transform="translate(-43 -211)">
+      <g class="cls-7" transform="matrix(1, 0, 0, 1, 43, 211)">
+        <path id="Path_13-2" data-name="Path 13" class="cls-2" d="M2552.083-1769.732c-.692.339-70.021,9.948-94.436,1.948-4.175-1.368-5.347-9-7.113-17.655-3.094-19.535-6.819-35.768-8.174-59.413-2.649-46.233-2.473-94.487-2.473-94.487s13.991-87.708,28.27-112.663c2.57-4.492,1.688,4.1,4.115,7.275,6.3,25.452,21.4,81.855,21.4,81.855s15.41,52.482,20.062,66.9,28.812,87.828,31.7,100.336S2552.775-1770.071,2552.083-1769.732Z" transform="translate(-2372 2076.57)"/>
+      </g>
+      <path id="Path_12" data-name="Path 12" class="cls-3" d="M2552.083-1769.732c-.692.339-70.021,9.948-94.436,1.948-4.175-1.368-5.347-9-7.113-17.655-3.094-19.535-6.819-35.768-8.174-59.413-2.649-46.233-2.473-94.487-2.473-94.487s13.991-87.708,28.27-112.663c2.57-4.492,1.688,4.1,4.115,7.275,6.3,25.452,21.4,81.855,21.4,81.855s15.41,52.482,20.062,66.9,28.812,87.828,31.7,100.336S2552.775-1770.071,2552.083-1769.732Z" transform="translate(-2329 2287.567)"/>
+      <g id="Group_8" data-name="Group 8">
+        <g class="cls-6" transform="matrix(1, 0, 0, 1, 43, 211)">
+          <path id="Path_10-2" data-name="Path 10" class="cls-4" d="M2432.02-1529.515c1.083,27.371,7.645,28.21,7.645,28.21s12.122,8.32,18.255,9.4a268.306,268.306,0,0,0,32.564,4.211c14.187.818,45.258,1.492,59.158,4.088s11.834,3.351,14.492,5.822c1.5,1.391,21.134-32.692,18.118-53.876-2.277-16-26.025-20.287-32.61-19.672-15.068,1.408-32.178,4.6-48.468,6.192s-19.134,1.462-40.925,4.81S2432.02-1529.515,2432.02-1529.515Z" transform="translate(-2372 1864)"/>
+        </g>
+        <path id="Path_11" data-name="Path 11" class="cls-5" d="M2549.74-1550.939c1.185,1.659,14.656,73.97,14.656,73.97s7.285-12.353,16.132-19.636c4.266-2.053,2.907-10.366,2.774-20.486.11-15.614-1.242-35.018-1.242-35.018S2548.554-1552.6,2549.74-1550.939Z" transform="translate(-2329 2075)"/>
+      </g>
+    </g>
+  </g>
+</svg>

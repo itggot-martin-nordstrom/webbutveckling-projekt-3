@@ -29,7 +29,7 @@ body{
     h2{
         font-size: 1.5vw;
         margin: 0 10px;
-        width: 20vw;
+        width: calc(100% - 40px);
         &:last-child{
             text-align: right;
         }
@@ -388,6 +388,10 @@ footer{
     }
     .coords{
         display: flex;
+        width: 80vh;
+        h2{
+            font-size: 1.4vw;
+        }
     }
     header i{
         transform: scale(0);
