@@ -47,19 +47,39 @@
         </header>
         <main>
 
-            <div class="hero">
-    <img src="img/water.svg" alt="Sunset">
-</div>
-<div class="content bottoms-content">
-    <h2>Bottoms</h2>
-    <a href="bottoms-item1.html" class="box box-small item-box"><h2>David's computer with access to your grades</h2><h2>5339 kr</h2></a>
-    <a href="#" class="box box-small item-box"><h2>Ola-Konny underwear</h2><h2>10 kr</h2></a>
-    <a href="#" class="box box-small item-box"><h2>Emma's stolen shoes</h2><h2>420 kr</h2></a>
-    <a href="#" class="box box-small item-box"><h2>Popcorn socks</h2><h2>9990 kr</h2></a>
-    <a href="#" class="box box-small item-box"><h2>Adodis Noke Shokes</h2><h2>42 133 kr</h2></a>
-    <a href="#" class="box box-small item-box"><h2>Gucci belt</h2><h2>39 kr</h2></a>
-    <a href="#" class="box box-small item-box"><h2>Earrings for your kneecaps</h2><h2>43 kr</h2></a>
-    <a href="#" class="box box-small item-box"><h2>Aglets</h2><h2>123 kr</h2></a>
+            <div class="content bottoms-content item-content">
+    <h2>David's computer with access to your grades0</h2>
+    <div class="images">
+        <div class="box box-small"></div>
+        <div class="box box-small"></div>
+        <div class="box"></div>
+    </div>
+    
+
+    <div class="category category-bottoms">
+        <h2>Size</h2>
+        <div class="options options-size">
+            <input type="radio" name="size" id="small"><label for="small">S</label>
+            <input type="radio" name="size" id="medium"><label for="medium">M</label>
+            <input type="radio" name="size" id="large"><label for="large">L</label>
+        </div>
+    </div>
+    <div class="category category-bottoms">
+        <h2>Colour</h2>
+        <i class="material-icons" onclick="toggleOption(2)" id="colour-toggle">keyboard_arrow_down</i>
+        <div class="options options-colour">
+            <div class="colour colour-red"></div>
+            <div class="colour colour-orange"></div>
+            <div class="colour colour-yellow"></div>
+            <div class="colour colour-green"></div>
+            <div class="colour colour-blue"></div>
+        </div>
+    </div>
+    <div class="category category-bottoms">
+        <h2>Price</h2>
+        <h2 id="price">5339 kr</h2>
+    </div>
+    <button onclick="notificationSquad(top)">Add to cart</button>
 </div>
         
         </main>

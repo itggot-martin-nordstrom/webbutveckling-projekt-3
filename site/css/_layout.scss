@@ -21,7 +21,7 @@ body{
     display: none;
     position: fixed;
     top: 50%;
-    right: 7vw;
+    right: 10vw;
     transform: rotateZ(-90deg) translateX(50%);
     transform-origin: right;
     font-size: 40%;
@@ -178,6 +178,9 @@ body{
             transition: 250ms;
             font-size: 80%;
         }
+        .arm:nth-child(4n+1){
+            width: 50vw;
+        }
         
         #E{
             transform: rotateZ(0deg);
@@ -187,7 +190,6 @@ body{
         }
         #S{
             transform: rotateZ(90deg);
-            width: 50vw;
         }
         #SW{
             transform: rotateZ(132.5deg);
@@ -204,7 +206,6 @@ body{
         }
         #N{
             transform: rotateZ(270deg);
-            width: 50vw;
             p{
                 transform: rotateZ(180deg);
             }
@@ -383,9 +384,97 @@ footer{
 
 @media only screen and (min-width: 700px){
     .wrapper{
-        padding: 20px 14vw;
+        padding: 20px 20vw;
     }
     .coords{
         display: flex;
+    }
+    header i{
+        transform: scale(0);
+    }
+    .sidebar{
+        left: 0;
+        background: none;
+        width: 20vw;
+        
+
+        i{
+            transform: scale(0)
+        }
+        .compass{
+            border: none;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        
+            .arm{
+                position: static;
+                width: 85%;
+                height: 7vw;
+                clip-path: none;
+                background: $yellow;
+                margin-bottom: 5px;
+
+                box-shadow: $box-shadow;
+                transition: background 250ms, width 250ms;
+
+                order: 2;
+                &:hover{
+                    background: $orange;
+                    width: 105%;
+                }
+
+                &::first-child{
+                    order: 1;
+                }
+
+                p{
+                    left: 15px;
+                    font-size: calc(1vw + 0.7rem)
+                }
+            }
+
+            .arm:nth-child(2n){
+                width: 0;
+                height: 0;
+            }
+            .arm:nth-child(4n+1){
+                width: 85%;
+                &:hover{
+                    width: 105%;
+                }
+            }
+            #N{
+                transform: none;
+                p{
+                    transform: none;
+                }
+                order: 2;
+            }
+            #E{
+                p{
+                    order: 1;
+                }
+            }
+            #S{
+                transform: none;
+                p{
+                    transform: none;
+                }
+            }
+            #W{
+                background: $yellow;
+                transform: none;
+                
+                &:hover{
+                    background: $orange;
+                }
+                p{
+                    transform: none;
+                }
+            }
+        }
     }
 }

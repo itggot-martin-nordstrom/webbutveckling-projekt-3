@@ -1,3 +1,13 @@
 .bottoms-content{
     background: linear-gradient($light-blue, $dark-blue);
+    button{
+        background: $light-blue;
+    }
+}
+
+.category-bottoms *:not(label){
+    color: white;
+}
+.category-bottoms .options input:checked + label{
+    border: 3px $light-blue solid;
 }
