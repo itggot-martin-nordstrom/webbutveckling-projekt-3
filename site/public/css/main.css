@@ -152,7 +152,7 @@ body {
       position: absolute;
       height: 13vw;
       width: 40vw;
-      background: linear-gradient(to top, #ffbb00 0%, #ffbb00 50%, yellow 50%, yellow 100%);
+      background: linear-gradient(to top, #FFB526 0%, #FFB526 50%, #FFD926 50%, #FFD926 100%);
       display: flex;
       align-items: center;
       clip-path: polygon(30% 0, 100% 50%, 30% 100%, 3% 50%);
@@ -185,7 +185,7 @@ body {
       transform: rotateZ(132.5deg); }
     .sidebar .compass #W {
       transform: rotateZ(180deg);
-      background: linear-gradient(to bottom, #ffbb00 0%, #ffbb00 50%, yellow 50%, yellow 100%); }
+      background: linear-gradient(to bottom, #FFB526 0%, #FFB526 50%, #FFD926 50%, #FFD926 100%); }
       .sidebar .compass #W p {
         transform: rotateZ(180deg); }
     .sidebar .compass #NW {

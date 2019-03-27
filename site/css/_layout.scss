@@ -144,7 +144,7 @@ body{
         
             height: 13vw;
             width: 40vw;
-            background: linear-gradient(to top, rgb(255, 187, 0) 0%, rgb(255, 187, 0) 50%, yellow 50%, yellow 100%);
+            background: linear-gradient(to top, $orange 0%, $orange 50%, $yellow 50%, $yellow 100%);
             
             display: flex;
             align-items: center;
@@ -196,7 +196,7 @@ body{
         }
         #W{
             transform: rotateZ(180deg);
-            background: linear-gradient(to bottom, rgb(255, 187, 0) 0%, rgb(255, 187, 0) 50%, yellow 50%, yellow 100%);
+            background: linear-gradient(to bottom, $orange 0%, $orange 50%, $yellow 50%, $yellow 100%);
             p{
                 transform: rotateZ(180deg);
             }
