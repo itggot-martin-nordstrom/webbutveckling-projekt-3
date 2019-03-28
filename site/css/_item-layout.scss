@@ -12,8 +12,12 @@
     justify-content: space-between;
 
     .box{
-       height: 100%;
-       width: 52%;
+        height: 100%;
+        width: 52%;
+        background: white;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .box-small{
         height: calc(50% - 5px);

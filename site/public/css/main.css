@@ -447,9 +447,27 @@ footer {
 .category-tops .options input:checked + label {
   border: 3px #FFD926 solid; }
 
+.images .box:nth-child(1) {
+  background-image: url(../img/coat_dark@219x284.jpg); }
+
+.images .box:nth-child(2) {
+  background-image: url(../img/coat_light@226x275.jpg); }
+
+.images .box:nth-child(3) {
+  background-image: url(../img/coat_model@376x933.jpg); }
+
 @media only screen and (min-width: 700px) {
   .item-box {
-    height: 35vw; } }
+    height: 35vw; }
+
+  .images .box:nth-child(1) {
+    background-image: url(../img/coat_dark@439x569.jpg); }
+
+  .images .box:nth-child(2) {
+    background-image: url(../img/coat_light@494x600.jpg); }
+
+  .images .box:nth-child(3) {
+    background-image: url(../img/coat_model@376x933.jpg); } }
 .bottoms-content {
   background: linear-gradient(#95d0ee, #365E72); }
   .bottoms-content button {
@@ -472,7 +490,11 @@ footer {
   justify-content: space-between; }
   .images .box {
     height: 100%;
-    width: 52%; }
+    width: 52%;
+    background: white;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
   .images .box-small {
     height: calc(50% - 5px);
     width: calc(48% - 10px);
@@ -573,3 +595,36 @@ footer {
     opacity: 1; }
   100% {
     opacity: 0; } }
+.cart-content {
+  background: linear-gradient(#FFD926, #95d0ee);
+  min-height: 0; }
+  .cart-content .box {
+    --height: 150px;
+    max-height: 200px;
+    position: relative;
+    align-items: flex-start;
+    height: var(--height);
+    padding: 20px 40px; }
+    .cart-content .box h1 {
+      max-width: 65%;
+      font-size: 1.3rem;
+      padding-bottom: 10px; }
+    .cart-content .box h2 {
+      font-size: 1rem; }
+      .cart-content .box h2::before, .cart-content .box h2::after {
+        display: none; }
+    .cart-content .box img {
+      transform: scale(0);
+      position: absolute;
+      right: 104px;
+      height: calc(100% - 20px);
+      max-width: calc(var(--height) - 20px); }
+    .cart-content .box i {
+      position: absolute;
+      right: 40px; }
+
+@media only screen and (min-width: 750px) {
+  .cart-content .box h1 {
+    max-width: 45%; }
+  .cart-content .box img {
+    transform: scale(1); } }
